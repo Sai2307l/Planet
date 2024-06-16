@@ -626,7 +626,7 @@ const camera = new _three.PerspectiveCamera(45, window.innerWidth / window.inner
 // Sets orbit control to move the camera around
 const orbit = new (0, _orbitControlsJs.OrbitControls)(camera, renderer.domElement);
 // Camera positioning
-camera.position.set(6, 8, 14);
+camera.position.set(280, 80, -100);
 orbit.update();
 //Set Background Images
 const Tloader = new _three.TextureLoader();
@@ -651,8 +651,8 @@ scene.add(Spotlight2);
 //Helper
 // const helper1 = new THREE.SpotLightHelper(Spotlight2);
 // scene.add(helper1);
-const SPShelper = new _three.CameraHelper(Spotlight2.shadow.camera);
-scene.add(SPShelper);
+// const SPhelper = new THREE.CameraHelper(Spotlight2.shadow.camera);
+// scene.add(SPhelper);
 // Sets a 12 by 12 gird helper
 const gridHelper = new _three.GridHelper(12, 12);
 scene.add(gridHelper);
@@ -744,7 +744,7 @@ function CreatePlanet(size, texture, pos, ring) {
     };
 }
 
-},{"three":"ktPTu","three/examples/jsm/controls/OrbitControls.js":"7mqRv","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","../../static/img/stars.jpg":"19JYf","../../static/img/sun.jpg":"746kh","../../static/img/mercury.jpg":"jjZAA","../../static/img/venus.jpg":"9Exps","../../static/img/saturn.jpg":"6Gz50","../../static/img/saturn ring.png":"dIQtu","../../static/img/earth.jpg":"g75f1","../../static/img/neptune.jpg":"1afGr","../../static/img/jupiter.jpg":"gyG7P","../../static/img/mars.jpg":"1XfRm","../../static/img/uranus.jpg":"fALJH","../../static/img/uranus ring.png":"fiXlu","../../static/img/pluto.jpg":"2OlP0"}],"ktPTu":[function(require,module,exports) {
+},{"three":"ktPTu","three/examples/jsm/controls/OrbitControls.js":"7mqRv","../../static/img/stars.jpg":"19JYf","../../static/img/sun.jpg":"746kh","../../static/img/mercury.jpg":"jjZAA","../../static/img/venus.jpg":"9Exps","../../static/img/saturn.jpg":"6Gz50","../../static/img/saturn ring.png":"dIQtu","../../static/img/earth.jpg":"g75f1","../../static/img/neptune.jpg":"1afGr","../../static/img/jupiter.jpg":"gyG7P","../../static/img/mars.jpg":"1XfRm","../../static/img/uranus.jpg":"fALJH","../../static/img/uranus ring.png":"fiXlu","../../static/img/pluto.jpg":"2OlP0","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"ktPTu":[function(require,module,exports) {
 /**
  * @license
  * Copyright 2010-2023 Three.js Authors

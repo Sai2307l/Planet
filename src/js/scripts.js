@@ -35,7 +35,7 @@ const camera = new THREE.PerspectiveCamera(
 const orbit = new OrbitControls(camera, renderer.domElement);
 
 // Camera positioning
-camera.position.set(6, 8, 14);
+camera.position.set(280, 80, -100);
 orbit.update();
 
 //Set Background Images
@@ -56,8 +56,8 @@ scene.add(Spotlight2);
 //Helper
 // const helper1 = new THREE.SpotLightHelper(Spotlight2);
 // scene.add(helper1);
-const SPShelper = new THREE.CameraHelper(Spotlight2.shadow.camera);
-scene.add(SPShelper);
+// const SPhelper = new THREE.CameraHelper(Spotlight2.shadow.camera);
+// scene.add(SPhelper);
 
 // Sets a 12 by 12 gird helper
 const gridHelper = new THREE.GridHelper(12, 12);
